@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>检测报告下载by凉风有信</title>
+<link href="images/logo.png" rel="icon">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style2.css">
+	<!--可无视-->
+
+	<!--主要样式-->
+	<link type="text/css" href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<div class="container" align="center">
+		<div class="col-md-6" style="margin-top: 20%;">
+			<div class="inset">
+				<form action="http://47.92.68.174//Applications/TestFlow/ReportPrint/Ajax_reportPrint.aspx/">
+					<div>
+						<h2>检测报告下载</h2>
+						<input type="text" name="reportNum" placeholder="报告编号" class="login_txtbx" value="" required><br>
+						<input hidden="text" name="printDirect" value="2">
+						<input hidden="text" name="isNeedRealPrint" value="1">
+						<input hidden="text" name="regCode" value="">
+						<label for="one" class="radio">
+							<input type="radio" name="itemCode" value="TL_HNKY" checked="checked"> 混凝土
+							<input type="radio" name="itemCode" value="TL_GJCC">钢筋
+							<input type="radio" name="itemCode" value="TL_GMJC">机械连接
+							<input type="radio" name="itemCode" value="TL_YSDZ">岩石抗压
+						</label>
+						<input hidden="text" name="reportClass" value="报告"><br>
+						<div class="sign">
+							<input type="submit" class="submit" value="下载">
+				</form>
+				<p>下载服务器很慢、点击下载按钮后耐心等待3~10秒。</p>
+</body>
+
+</html>
